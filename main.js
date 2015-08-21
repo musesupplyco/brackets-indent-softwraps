@@ -20,7 +20,7 @@ define(function (require, exports, module) {
             eltStyle    = window.getComputedStyle(elt, null),
             textIndent  = -offset + "px",
             noGutter    = !PreferencesManager.get("showLineNumbers"),
-            paddingLeft = (noGutter ? DEFAULT_GUTTER_WIDTH : 0) + offset + "px";
+            paddingLeft = (noGutter ? DEFAULT_GUTTER_WIDTH : 4) + offset + "px";
         if (textIndent != eltStyle["text-indent"]) {
           elt.style.textIndent = textIndent;
         }
